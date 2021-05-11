@@ -1,0 +1,348 @@
+i {
+    padding: 3px;
+}
+
+small * {
+    color: rgba(255,255,255,1);
+}
+
+small a:hover{
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+}
+
+small {
+    margin: 5px;
+}
+
+.navbar{
+    height: 45px;
+}
+
+.my_navbar {
+    margin-right: 15px;
+}
+
+.navbar li {
+    margin-right: 5px;
+}
+
+
+footer span {
+    font-size: 12px;
+    color: #545f6d;
+    text-align: center;
+}
+
+
+.card img {
+    width: 100%;
+}
+
+.card {
+    height: 42.5rem;
+    overflow: hidden;
+}
+
+#wordsView {
+    padding: 10px;
+    overflow: auto;
+    border-radius: 15px;
+}
+
+
+
+.btn-circle {
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    line-height: 14px;
+    background: #e26d6d;
+    font-size: 14px;
+    color: white;
+    border-radius: 8px;
+}
+.btn-circle:hover{
+    background: #e57e7e;
+    color: rgba(255,255,255,.5);;
+}
+
+
+
+
+.box {
+    height: 70px;
+    width: 70px;
+    position: fixed;
+    right: 10px;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background: #020438;
+    border-radius: 100%;
+    overflow: hidden;
+}
+.box .percent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
+}
+.box .water {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    background: #4D6DE3;
+    transition: all .3s;
+}
+.box .water_wave {
+    width: 200%;
+    position: absolute;
+    bottom: 100%;
+}
+.box .water_wave_back {
+    right: 0;
+    fill: #C7EEFF;
+    -webkit-animation: wave-back 1.4s infinite linear;
+    animation: wave-back 1.4s infinite linear;
+}
+.box .water_wave_front {
+    left: 0;
+    fill: #4D6DE3;
+    margin-bottom: -1px;
+    -webkit-animation: wave-front .7s infinite linear;
+    animation: wave-front .7s infinite linear;
+}
+
+@-webkit-keyframes wave-front {
+    100% {
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+}
+
+@keyframes wave-front {
+    100% {
+        -webkit-transform: translate(-50%, 0);
+        transform: translate(-50%, 0);
+    }
+}
+@-webkit-keyframes wave-back {
+    100% {
+        -webkit-transform: translate(50%, 0);
+        transform: translate(50%, 0);
+    }
+}
+@keyframes wave-back {
+    100% {
+        -webkit-transform: translate(50%, 0);
+        transform: translate(50%, 0);
+    }
+}
+
+
+
+#qq {
+    width: 600px;
+    /*宽*/
+    /*height: 170px;*/
+    /*高*/
+    background: #fff;
+    /*背景颜色*/
+    margin: 50px auto 30px;
+    border-radius: 5px;
+    /*Html5 圆角*/
+}
+
+#qq p {
+    font-size: 12px;
+    color: #666;
+    font-family: "微软雅黑";
+    line-height: 45px;
+    text-indent: 20px;
+}
+
+#qq .message {
+    width: 560px;
+    /*height: 70px;*/
+    margin: 0 auto;
+    /*overflow: hidden;*/
+    outline: none;
+    border: 1px solid #ddd;
+    padding: 8px;
+    box-sizing: border-box;
+    font-size: 14px;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #778899 0%, #333 100%);
+    /*粗细 风格 颜色*/
+}
+
+#qq .But {
+    width: 560px;
+    height: 35px;
+    margin: 15px auto 0px;
+    position: relative;
+    /*相对，参考对象*/
+}
+
+#qq .But bq {
+    float: left;
+    color: #ff8140;
+    /*左浮动*/
+}
+
+#qq .But span.submit {
+    width: 80px;
+    height: 30px;
+    background: #ff8140;
+    display: block;
+    float: right;
+    /*右浮动*/
+    line-height: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    /*手指*/
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    font-family: "微软雅黑";
+}
+
+/*face begin*/
+#qq .But .face {
+    width: 440px;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 12px #666;
+    position: absolute;
+    /*绝对定位*/
+    top: 21px;
+    left: 15px;
+    display: none;
+    /*隐藏*/
+}
+
+#qq .But .face ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+#qq .But .face ul li {
+    width: 30px;
+    height: 30px;
+    list-style-type: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*msgCon begin*/
+.msgCon {
+    width: 600px;
+    margin: 0px auto;
+    margin-bottom: 60px;
+}
+
+.msgCon .msgBox {
+    background: #fff;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-top: 16px;
+    border-radius: 4px;
+}
+
+.msgCon .msgBox .headUrl {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px dotted #ddd;
+    display: flex;
+    align-items: center;
+}
+
+.msgCon .msgBox .headUrl img {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%
+}
+
+.msgCon .msgBox .headUrl div {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+    font-size: 16px;
+    margin-left: 16px;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to top, #b224ef 0%, #7579ff 100%);
+}
+
+.msgCon .msgBox .headUrl div .time {
+    font-size: 14px;
+    margin-top: 6px;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #74ebd5 0%, #9face6 100%);
+}
+
+.msgCon .msgBox .headUrl a {
+    font-size: 14px;
+    padding: 10px;
+    color: salmon;
+    cursor: pointer;
+}
+
+.msgCon .msgBox .msgTxt {
+    font-size: 14px;
+    color: #666;
+    min-height: 40px;
+    line-height: 24px;
+    padding: 10px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, #778899 0%, #333 100%);
+}
+
+.img-circle:hover {
+    animation: jump ease-in 2s infinite reverse;
+    -webkit-animation: jump ease-in 2s infinite reverse;
+}
+
+
+
+@keyframes jump {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes jump {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
